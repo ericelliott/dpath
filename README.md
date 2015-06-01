@@ -12,7 +12,10 @@ $ npm install --save dpath
 
 ```
 import dp from 'dpath';
-arrPath = dp('a.b.c'); // => ['a','b','c']
+const arrPath = dp('a.b.c'); // => ['a','b','c']
+
+// optionally specify a delimiter:
+const arr2 = dp('a,b,c', ','); // => ['a','b','c']
 ```
 
 ## Use with Immutable.js
