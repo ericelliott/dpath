@@ -1,0 +1,24 @@
+{
+  "name": "dpath",
+  "version": "1.0.0",
+  "description": "Sugar for myString.split('.'); Use: dp('a.b.c'); // => ['a','b','c']",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests, sorry.\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericelliott/dpath.git"
+  },
+  "keywords": [
+    "Array",
+    "object",
+    "immutable.js"
+  ],
+  "author": "Eric Elliott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericelliott/dpath/issues"
+  },
+  "homepage": "https://github.com/ericelliott/dpath"
+}
