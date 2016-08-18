@@ -25,5 +25,5 @@ import I from `immutable`;
 import dp from 'dpath';
 
 let map = I.Map().setIn(dp('a.b.c'), 'val');
-map.toJS(); // => {a:{b:{c:'X'}}}
+map.toJS(); // => {a:{b:{c:'val'}}}
 ```
