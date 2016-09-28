@@ -1,13 +1,20 @@
+/**
+ * Sugar for myString.split('.');
+ */
 // dp(path: String, delimiter: String) => Array
-export const dp = (input, delimiter) => {
+const dp = (input, delimiter) => {
   var d = delimiter || '.';
   return input.split(d);
 };
 
-export default dp;
-
 // get(path: String, i: Immutable) => value: Any
-export const get = (path, i) => i.getIn(dp(path));
+const get = (path, i) => i.getIn(dp(path));
 
-// set(path: String, i: Immutable, val: Any) => newState: Immutable
-export const set = (path, i, val) => i.setIn(dp(path), val);
+// set(path: String, i: Immutable, val: Any) => Immutable
+const set = (path, i, val) => i.setIn(dp(path), val);
+
+module.exports = dp;
+module.exports.dp = dp;
+module.exports.default = dp;
+module.exports.get = get;
+module.exports.set = set;
