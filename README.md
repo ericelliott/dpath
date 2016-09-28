@@ -81,5 +81,5 @@ const i = Immutable.fromJS({
   }
 });
 const newState = set('a.b.c', i, 23);
-const actual = get('a.b.c', newState);
+get('a.b.c', newState); // => 23
 ```
