@@ -2,9 +2,13 @@
   "name": "dpath",
   "version": "1.0.0",
   "description": "Sugar for myString.split('.'); Use: dp('a.b.c'); // => ['a','b','c']",
-  "main": "index.js",
+  "main": "source/index.js",
   "scripts": {
-    "test": "echo \"No tests, sorry.\""
+    "lint": "eslint . && echo 'Lint finished...\n'",
+    "pretest": "npm run -s lint",
+    "test": "node source/test/index.js",
+    "watch": "watch 'clear && npm run -s test' source",
+    "update": "updtr"
   },
   "repository": {
     "type": "git",
@@ -20,5 +24,14 @@
   "bugs": {
     "url": "https://github.com/ericelliott/dpath/issues"
   },
-  "homepage": "https://github.com/ericelliott/dpath"
+  "homepage": "https://github.com/ericelliott/dpath",
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-preset-node6": "^11.0.0",
+    "eslint": "^3.6.1",
+    "immutable": "^3.8.1",
+    "tape": "^4.6.0",
+    "updtr": "^0.2.1",
+    "watch": "^0.19.2"
+  }
 }
