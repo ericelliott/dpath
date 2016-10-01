@@ -15,7 +15,7 @@ If you want to use FP pipes (lodash `flow`, etc...) it gets even better. Normall
 ```js
 const pipeline = pipe(
   getImmutable,
-  immutable => immutable.getIn('a', 'b', 'c')
+  immutable => immutable.getIn(['a', 'b', 'c'])
   map(doSomethingWithABC)
 );
 ```
