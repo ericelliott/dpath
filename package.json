@@ -1,6 +1,6 @@
 {
   "name": "dpath",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Sugar for myString.split('.'); Use: dp('a.b.c'); // => ['a','b','c']",
   "main": "source/index.js",
   "scripts": {
